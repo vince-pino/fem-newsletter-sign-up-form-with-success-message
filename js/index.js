@@ -6,7 +6,8 @@ subscribeBtnEl.addEventListener('click', () => {
 
   if (checkEmail(email)) {
     document.querySelector('.form-container').style.display = 'none';
-  document.querySelector('.success-container').style.display = 'flex';
+    document.querySelector('.success-container').style.display = 'flex';
+    document.querySelector('#email').textContent = email;
   }
   else {
     document.querySelector('.error-message').style.display = 'block';
